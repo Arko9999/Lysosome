@@ -9,11 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: black;
+            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
             color: white;
         }
+        @keyframes gradient {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
         header {
-            background: purple;
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 20px;
             text-align: center;
@@ -22,18 +29,14 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #333;
-            color: #00ff00; /* Green text */
+            background: rgba(0, 0, 0, 0.6);
             border-radius: 8px;
         }
-        h1 {
-            color: white;
-        }
-        h2 {
-            color: #ff00ff; /* Purple text */
+        h1, h2 {
+            color: #ffffff;
         }
         footer {
-            background: purple;
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             text-align: center;
             padding: 10px;
